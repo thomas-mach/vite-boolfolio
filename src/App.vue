@@ -1,6 +1,9 @@
 <template>
-  <div class="row">
-    <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+  <div class="container mt-6 mb-6">
+    <div class="grid grid-cols-3 gap-4">
+      <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+
+    </div>
   </div>
 </template>
 
